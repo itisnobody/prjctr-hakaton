@@ -1,0 +1,161 @@
+
+.login-form,
+.login-form-1{
+	padding-bottom: 5%;
+	text-align: center;
+}
+
+.login-form__form{
+	padding-top: 4%;
+	display: inline-block;
+	text-align: center;
+	width: 316px;
+}
+
+.login-form__title{
+	color: #434D59;
+	font-size: 22px;
+}
+
+.login-form__form--label {
+	display: inline-block;
+	text-align: left;
+	color: #8F99A7;
+	font-size: 14px;
+	width:100%;
+}
+
+.login-form__form--input,
+.login-form__form--button__link{
+	display: inline-block;
+}
+
+.login-form__form--input {
+	border-bottom: 1px solid #8F99A7;
+	width: 100%;
+	padding: 7% 0 0.5%;
+}
+.login-form__capcha_icon_img{
+	width:60px;
+}
+.login-form__form--button__link{
+
+	background: #1d6bb2;
+	margin-top: 27px;
+	border-radius: 2px;
+	color: white;
+	padding: 6.5% 0;
+	width: 100%;
+	font-size: 14px;
+}
+
+.login-form__description{
+	padding-top: 4.5%;
+	text-align: center;
+	color: #8F99A7;
+	font-size: 14px
+}
+
+
+/*1.1*/
+
+.login-form-1__status{
+	padding: 3% 0 0.7% 0;
+	color: #434D59;
+	font-size: 16px;
+
+}
+
+.login-form-1__about{
+	display: block;
+	color: #1D6BB2;
+	font-size: 12px;
+	padding-top: 20px;
+}
+
+.login-form__form-1{
+	padding: 0;
+}
+
+
+/*2*/
+
+.login-form__form-page2{
+	position: relative
+}
+
+.login-form__icon{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-top: 23%;
+	margin-right: 5%;
+}
+
+.login-form__form--input-page{
+	padding-bottom: 2%
+}
+
+
+/*1-2*/
+.login-form__capcha{
+	background: #D3D3D3;
+	margin-top: 10px;
+}
+
+.login-form__capcha__check {
+	display: inline-block;
+	-webkit-appearance: checkbox;
+	width:30px;
+	height: 30px;
+	margin: 27px 14px;
+	float:left;
+}
+.login-form__capcha__label{
+	display:inline-block;
+	transform: translateY(210%);
+	float:left;
+}
+.login-form__capcha-box::after{
+	content:'';
+	clear: both;
+	display: table;
+
+	
+}
+.clearfix,
+.login-form__capcha_description::after,
+.login-form__capcha::after,
+.login-form__capcha-box::after,
+{
+	content:'';
+	display: table;
+	clear:both;
+	overflow: hidden;
+}
+.login-form__capcha_icon{
+	float:right;
+	transform: translateY(20%);
+	margin-right:25px;
+}
+.login-form__capcha_description{
+display:block;
+font-size: 8px;
+float:right;
+color:#9B9B9B;
+}
+
+.login-form__capcha:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.login-form__capcha-box{
+	margin-top: 27px;
+	box-shadow: 0 0 10px black;
+}
+
+
+
+
+
