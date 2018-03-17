@@ -1,0 +1,62 @@
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    min-width: 182px;
+    color: #fff;
+    padding: 0 8px;
+    background-color: $base-color;
+    word-spacing: normal;
+}
+
+.button {
+    @extend .btn;
+    text-align: center;
+    line-height: 4;
+    box-shadow: 0 4px 10px rgba(29, 107, 178, 0.2), 0 3px 6px rgba(29, 107, 178, 0.15);
+    border-radius: 2px;
+
+    &--hover,
+    &:hover {
+        box-shadow: 0 4px 10px rgba(29, 107, 178, 0.4), 0 3px 6px rgba(29, 107, 178, 0.3);
+        background-color: #1f75c4;
+    }
+
+    &--active,
+    &:active {
+        box-shadow: 0 4px 10px rgba(29, 107, 178, 0.1), 0 3px 6px rgba(29, 107, 178, 0.07);
+        background-color: #1a5fa1;
+    }
+
+    &--disabled,
+    &:disabled {
+        color: #ccc;
+        background-color: #eee;
+    }
+}
+
+.tab {
+    @extend .btn;
+    color: $dark-gray;
+    background-color: #fff;
+    padding: 0 28px;
+    line-height: 3;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    margin-right: 22px;
+
+    &--hover,
+    &:hover {
+        color: $sec-color;
+    }
+
+    &--active,
+    &:active {
+        background-color: $sec-color;
+        color: #fff;
+        border-color: $sec-color;
+    }
+}
