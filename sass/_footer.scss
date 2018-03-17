@@ -1,0 +1,21 @@
+.page__footer--block {
+    border-top: 2px solid #eeeeee;
+}
+.page--footer--block:after {
+    content:'';
+    clear: both;
+    display: table;
+}
+.page__footer--content {
+    float: left;
+    padding-left: 111px;
+    color: #a5adb9;
+    padding: 25px 0 25px 110px;
+}
+.page__footer--icon {
+    float: right;
+    padding: 20px 30px 20px 0;
+}
+.page__footer--icon--fb {
+    padding-right: 37px;
+}
