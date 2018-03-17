@@ -1,0 +1,31 @@
+html {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 300;
+}
+
+h1 {
+	color: $dark-gray;
+	font-weight: 300;
+}
+
+h2 {
+	color: $dark-gray;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+h3 {
+  color: $dark-gray;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.clearfix {
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
