@@ -1,5 +1,10 @@
 
 node_modules
+<<<<<<< HEAD
 
 public
 
+=======
+public
+./*.html
+>>>>>>> 0799b3f5219cdd04ec123d7d36033871dd463a98
