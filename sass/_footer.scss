@@ -10,7 +10,7 @@
     float: left;
     padding-left: 111px;
     color: #a5adb9;
-    padding: 25px 0 25px 110px;
+    padding: 20px 0 25px 110px;
 }
 .page__footer--icon {
     float: right;
@@ -18,4 +18,9 @@
 }
 .page__footer--icon--fb {
     padding-right: 37px;
+    width: auto;
+}
+.page__footer--icon--yt {
+    width: auto;
+    heigth: auto;
 }
