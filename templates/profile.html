@@ -11,8 +11,8 @@
 	<input id="tab4" type="radio" class="radio" name="tabs">
 	  <label for="tab4" class="user-profile__tab">Налаштування</label>
 <section id="contacts" class="contacts clearfix">
-	<div class="contacts__telefon">
-		<p class="contacts__telefon--title">Телефон</p>
+	<div class="contacts__number">
+		<p class="contacts__number--title">Телефон</p>
 		<div class="contacts__number--main">
 			<a class="contacts__number--link" href="phone-to">
 				<i class="icon icon-phone"></i>
@@ -38,7 +38,7 @@
 		<div class="contacts__number--additional">
 			<a class="contacts__number--link" href="phone-to">
 				<i class="icon icon-phone"></i>
-				<span>
+				<span class="contacts__number--value additional-number">
 					380 (xx) xxx-xx-xx<br>
 					Додатковий</span>
 				<i class="icon icon-pencil"></i>
@@ -67,49 +67,158 @@
 			</a>
 	</div>	
 </section>
-<section id="adress" class="adress">
+<section id="adress" class="adress clearfix">
+<div class="contacts__number">
+		<p class="contacts__number--title">Адреса листування</p>
+		<div class="contacts__number--main">
+			<a class="contacts__number--link" href="phone-to">
+				<i class="icon icon-location"></i>
+				<span class="contacts__number--value">
+					Оболонський проспект, буд.14-А, кв.59, м.Київ, 04205, Україна
+				</span>
+				<i class="icon icon-pencil"></i>
+			</a>
+		</div>
+	</div>
+	<div class="contacts__email">
+		<p class="contacts__email--title">Адреса реєстрації</p>
+
+			<a class="contacts__email--value">
+				<i class="icon icon-location"></i>
+				<span>Оболонський проспект, буд.14-А, кв.59, м.Київ, 04205, Україна</span>
+			</a>
+	</div>	
+
 	<div class="adress__mail">
-		<p>Адреса листування</p>
-		<p>Оболонський проспект, буд.14-А, кв.59, м.Київ, 04205, Україна</p>
+		<p></p>
+		<p></p>
 	</div>
 	<div class="adress__registration">
-		<p>Адреса реєстрації</p>
-		<p>Оболонський проспект, буд.14-А, кв.59, м.Київ, 04205, Україна</p>
+		<p></p>
+		<p></p>
 	</div>
+
 </section>
-<section id="requisites" class="requisites">
-	<p>Документи</p>
+<section id="requisites" class="requisites clearfix">
+
+		<div class="contacts__number">
+		<p class="contacts__number--title">Документи</p>
+		<div class="contacts__number--main">
+			<a class="contacts__number--link" href="phone-to">
+				<i class="icon icon-passport"></i>
+				<span class="contacts__number--value">
+					ПК 123456<br>
+					Паспорт
+				</span>
+			</a>
+		</div>
+		<div class="contacts__number--additional">
+			<a class="contacts__number--link" href="phone-to">
+				<i class="icon icon-passport"></i>
+				<span class="contacts__number--value additional-number">
+					1234567890<br>
+					Індивідуальний податковий номер (ІПН)</span>
+			</a>
+	      	</div>
+		</div>
+	</div>
+
 	<div class="requisites__item">
-		<p>ПК 123456<p>
-		<p>Паспорт</p>
+		<p><p>
+		<p></p>
 	</div>
 	<div class="requisites__item">
-		<p>1234567890<p>
-		<p>Індивідуальний податковий номер (ІПН)</p>
+		<p><p>
+		<p></p>
 	</div>
+
 </section>
-<section id="settings" class="settings">
-	<div class="settings__communicate">
-		<p>Способи комунікації з СК «ТАС»</p>
-		<p class="settings__communicate--item">Контактний телефон</p>
-		<p class="settings__communicate--item">Email</p>
-		<p class="settings__communicate--item">Вайбер (контактний телефон)</p>
-		<p class="settings__communicate--item">Адреса листування</p>
-		<p class="settings__communicate--item">Кабінет клієнта</p>
+<section id="settings" class="settings clearfix">
+
+	<div class="contacts__number">
+		<p class="contacts__number--title">Способи комунікації з СК «ТАС»</p>
+		<div class="contacts__number--main">
+			
+			<div class="contacts-social">
+				<input type="checkbox" value="None" id="viber" name="check" class="social-checkbox" checked />
+	      		<label for="viber" class="social-label">Контактний телефон</label>
+	      	</div>
+	      	<div class="contacts-social">
+	      		<input type="checkbox" value="None" id="telegram" name="check" class="social-checkbox" checked />
+	      		<label for="telegram" class="social-label">Email</label>
+	      	</div>
+	      	<div class="contacts-social">
+				<input type="checkbox" value="None" id="whatsapp" name="check" class="social-checkbox"/>
+	      		<label for="whatsapp" class="social-label">Вайбер (контактний телефон)</label>
+	      	</div>
+	      	<div class="contacts-social">
+	      		<input type="checkbox" value="None" id="telegram" name="check" class="social-checkbox" checked />
+	      		<label for="telegram" class="social-label">Адреса листування</label>
+	      	</div>
+	      	<div class="contacts-social">
+				<input type="checkbox" value="None" id="whatsapp" name="check" class="social-checkbox"/>
+	      		<label for="whatsapp" class="social-label">Кабінет клієнта</label>
+	      	</div>
+
+		</div>
+
 	</div>
-	<div class="settings__social">
-		<p>Зв'язок із соціальними мережами</p>
-		<p class="settings__social--item">Facebook</p>
-		<p class="settings__social--item">Linkedin</p>
+
+		<div class="contacts__number">
+		<p class="contacts__number--title">Зв'язок із соціальними мережами</p>
+		<div class="contacts__number--main">
+			
+			<div class="contacts-social">
+				<input type="checkbox" value="None" id="viber" name="check" class="social-checkbox" checked />
+	      		<label for="viber" class="social-label">Facebook</label>
+	      	</div>
+	      	<div class="contacts-social">
+	      		<input type="checkbox" value="None" id="telegram" name="check" class="social-checkbox" checked />
+	      		<label for="telegram" class="social-label">Linkedin</label>
+	      	</div>
+
+		</div>
+
 	</div>
-		<div class="settings__advert">
-		<p>Рекомендації та реклама</p>
-		<p class="settings__advert--item">Персональні та акційні пропозиції</p>
-	</div>
-	<div class="settings__language">
+
+	<div class="contacts__email">
+		<p class="contacts__email--title">Рекомендації та реклама</p>
+			<div class="contacts-social">
+	      		<input type="checkbox" value="None" id="telegram" name="check" class="social-checkbox" checked />
+	      		<label for="telegram" class="social-label">Персональні та акційні пропозиції</label>
+	      	</div>
+
+	</div>	
+
+	<div class="contacts__email">
+		<p class="contacts__email--title">Мова інтерфейсу</p>
+
+			<a class="contacts__email--value">
 		<a href="" class="settings__language--option">UA</a>
 		<a href="" class="settings__language--option">RU</a>
 		<a href="" class="settings__language--option">EN</a>
+			</a>
+	</div>	
+
+	<div class="settings__communicate">
+		<p></p>
+		<p class="settings__communicate--item"></p>
+		<p class="settings__communicate--item"></p>
+		<p class="settings__communicate--item"></p>
+		<p class="settings__communicate--item"></p>
+		<p class="settings__communicate--item"></p>
+	</div>
+	<div class="settings__social">
+		<p></p>
+		<p class="settings__social--item"></p>
+		<p class="settings__social--item"></p>
+	</div>
+		<div class="settings__advert">
+		<p></p>
+		<p class="settings__advert--item"></p>
+	</div>
+	<div class="settings__language">
+		<p></p>
 	</div>
 </section>
 </section>
