@@ -1,3 +1,6 @@
-css
 node_modules
 public
+css
+public
+*.html
+
