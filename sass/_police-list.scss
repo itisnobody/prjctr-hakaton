@@ -188,6 +188,19 @@ $shadow-none: drop-shadow(0 0 0 rgba(0,0,0,.0));
 	line-height: 0;
 }
 
+.usd::after {
+	content: '$';
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	vertical-align: baseline;
+	top: -0.6em;
+	left: 0.4em;
+	position: relative;
+	line-height: 0;
+}
+
 .police__item__pack, .police__item__date, .police__item__status {
 	font-size: 14px;
 	color: #434d59;
