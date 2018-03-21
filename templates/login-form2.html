@@ -1,13 +1,18 @@
 <section class="login-form">
 	<h2 class="login-form__title">Авторизація</h2>
 	<form class="login-form__form login-form__form-page2">
-		<figure class="login-form__icon">
-			<i class="icon eye-shut svg"></i>
-		</figure>
-		<label class="login-form__form--label"> Пароль з СМС повідомлення 
-			<input class="login-form__form--input login-form__form--input-page" type="password" name="">
+		<input id="check-form" class="login-form__check" type="checkbox"/>
+		<label class="login-form__icon-label" for="check-form">
+			<figure class="login-form__icon">
+				<img src="http://brodart-packaging.fr/ru/images/template/icon-eye.svg" alt="">
+			</figure>
 		</label>
-			<button class="login-form__form--button__link"> ПРОДОВЖИТИ</button>
+		<label for="login-form" for="login-form2" class="login-form__form--label"> 
+			Пароль з СМС повідомлення 
+		</label>
+		<input required id="login-form" class="login-form__form--input login-form__form--input-page1" type="password" name="">
+		<input required id="login-form2" class="login-form__form--input login-form__form--input-page2" type="name" name="">
+		<button class="login-form__form--button__link"> ПРОДОВЖИТИ</button>
 	</form>
 	<p class="login-form__description">Користуватися сервісом мають можливість лише Страхувальники-фізичні особи</p>
 </section>
