@@ -5,8 +5,32 @@
 	display: table;
 }
 
+.profile__user-header {
+  margin-left: 80px;
+  text-align: center;
+}
+
+.profile__user-photo {
+  width: 100%;
+}
+
+.profile__user-name {
+  color: $dark-gray;
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.profile__ua-icon {
+  width: 26px;
+  height: 26px;
+  margin: 10px auto;
+}
+
 .user-profile {
-  margin-left: 110px;
+  margin-left: 80px;
+  padding: 30px;
 }
 
 .contacts,
@@ -14,7 +38,25 @@
 .requisites,
 .settings {
   display: none;
-  padding: 20px 0 0;
+  padding: 20px 0;
+}
+
+.contacts,
+.adress {
+  column-count: 2;
+  column-width: 95%;
+}
+
+.settings__flex {
+  display: flex;
+  justify-content: flex-start;
+  > div {
+    width: 400px;
+    padding: 20px 40px 0;
+    > div {
+      padding: 0;
+    }
+  }
 }
 
 .radio {
@@ -55,15 +97,24 @@
   display: block;
 }
 
-.contacts__number {
-	width: 50%;
+.contacts__number, 
+.adress__mail,
+.adress__registration {
+	width: 95%;
+  color: $dark-gray;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 10px;  
 }
 
 .contacts-social {
 	padding: 20px 0 5px;
 }
 
-.contacts__number--main {
+.contacts__number--main,
+.adress__mail--main {
 	width: 40%;
 }
 
@@ -187,7 +238,9 @@
 // }
 
 .contacts__number--title,
-.contacts__email--title {
+.contacts__email--title,
+.adress__mail--title,
+.adress__registration--title {
 	color: $dark-gray;
 	font-family: Roboto;
 	font-size: 22px;
@@ -196,23 +249,17 @@
 	padding: 15px 30px 15px 0;
 }
 
-.contacts__number {
-	float: left;
-	color: $dark-gray;
-	font-family: Roboto;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 24px;
-	padding: 10px;
-}
-
 .contacts__number--main,
 .contacts__number--additional,
-.contacts__email,
 .contacts__email--value {
 	display: inline-block;
 	padding: 15px 50px 15px 0;
 	min-width: 220px;
+}
+
+.contacts__email {
+  display: inline-block;
+  padding: 0 50px 15px 0;
 }
 
 .contacts__number--main,
@@ -237,12 +284,24 @@
 }
 
 .settings__language a,
-.contacts__number--link {
+.contacts__number--link,
+.adress__mail--link,
+.adress__registration--link {
 	color: #1a2235;
 }
 
+.settings__language a {
+  margin: 20px 10px 0 0;
+}
+
+.settings__language a:hover {
+  color: $blue;
+}
+
 .contacts__email--value,
-.contacts__number--link {
+.contacts__number--link,
+.adress__mail--link,
+.adress__registration--link {
 	display: block;
 	position: relative;
 }
@@ -265,6 +324,18 @@
 .contacts__email--value span {
   border-bottom: 2px solid $gray;
   width: 195px;
+  padding: 2px;
+}
+
+.adress__mail--link,
+.adress__registration--link {
+  max-width: 400px;
+  line-height: 20px;
+  .icon-pencil {
+    top: 0;
+    margin-top: 5px;
+    margin-right: -20px;
+  }
 }
 
 .icon-pencil,
@@ -275,7 +346,28 @@
 	margin-right: 45px;
 }
 
+.icon-email {
+  margin-right: 10px;
+}
+
 .icon-valid {
     margin-right: 10px;
     margin-top: -6px;
+}
+
+.icon-location {
+  margin-right: 15px;
+  float: left;
+}
+
+.requisites__item--passport {
+  max-width: 300px;
+}
+
+.requisites__item--inn {
+  max-width: 380px;
+}
+
+.settings__communicate.contacts__number {
+  width: auto;
 }
